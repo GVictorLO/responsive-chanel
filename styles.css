@@ -1,5 +1,27 @@
 body {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  height: 400px;
+  flex-direction: column;
+  background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 28px;
+  color: black;
+  margin: -2px 2px -2px 15px;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat";
+  word-spacing: 2px;
+  font-weight: 500;
 }
 
 .attribution {
@@ -8,21 +30,127 @@ body {
 }
 
 .container {
+  height: 98%;
+  width: 45%;
   display: flex;
-  height: 500px;
-  max-width: 1100px;
-  border: 1px solid black;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
-  margin: 100px 260px 50px 260px;
+  margin: 250px 0 50px 0;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -15px 20px;
 }
 
+.container div div p {
+  text-decoration: line-through;
+  margin-left: -10px;
+}
+
+.perfume {
+  padding-top: 15px;
+  margin-left: -100px;
+  letter-spacing: 5px;
+}
+
+.text {
+  line-height: 2em;
+  margin-left: 15px;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row !important;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#descauntPrice {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: -30px;
+}
 #imageDesktop {
-  height: 500px;
+  height: 395px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#imageMobile {
+  display: none;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+button {
+  background-color: hsla(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  height: 40px;
+  border-radius: 7px;
+  border-color: transparent;
+  width: 90%;
+  margin-top: 10px;
+  font-family: "Montserrat";
+}
+
+button:hover {
+  background-color: hsl(157, 45%, 21%);
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    margin-top: 10px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 365px;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .container div {
+    height: 100%;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  #imageDesktop {
+    display: none;
+  }
+
+  p {
+    word-spacing: 1px;
+  }
+
+  .text {
+    line-height: 1.5em;
+  }
+
+  #imageMobile {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
 }
