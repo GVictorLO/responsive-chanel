@@ -21,3 +21,8 @@ And after building the look like of the mobile and desktop versions it was diffi
 
 - linkedin - [Gabriel Victor]()
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+
+  ### Result
+  ![image](https://github.com/GVictorLO/responsive-chanel/assets/83018247/41512d8f-1e30-4319-bab2-b2ba302c5f37)
+![image](https://github.com/GVictorLO/responsive-chanel/assets/83018247/1369c9c2-81bd-4125-bc46-77b7452b1224)
+
